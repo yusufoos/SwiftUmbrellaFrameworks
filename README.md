@@ -15,6 +15,10 @@ Encapsulate all internal Frameworks by linking them statically to the single exp
 - Add new Framework to Umbrella Framework’s Framework and Libraries but Do Not Embed
 - Add dependencies to the new Framework in Framework and Libraries but Do Not Embed
 
+### Alternative Approach (See https://github.com/yusufoos/SwiftUmbrellaFrameworks/tree/dynamic)
+- Create all Frameworks as dynamic
+- Embed all Frameworks only into the Umbrella Framework 
+
 # Importing Internal Modules in the Public API
 When updating the public interface based off of a new internal module you will need to import it.
 In order for this to not cause compiler errors in the XCFramework you must use @_implementationOnly
